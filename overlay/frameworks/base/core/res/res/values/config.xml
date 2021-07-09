@@ -34,7 +34,7 @@
         <!-- Nominal White Z --> <item>1.089366</item>
     </string-array>
 
-     <fraction name="config_autoBrightnessAdjustmentMaxGamma">300%</fraction>
+	    <!--<fraction name="config_autoBrightnessAdjustmentMaxGamma">300%</fraction>-->
        <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
     
          This resource is similar to config_maximumScreenDimDuration but the maximum
@@ -358,7 +358,38 @@
     
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
+    <integer name="config_defaultRefreshRate">0</integer>
     <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
+	    <item>-1</item>
+	    <item>20</item>
+    </integer-array>
+    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
+	    <item>10</item>
+	    <item>14</item>
+    </integer-array>
+    <integer-array name="config_availableColorModes">
+         <item>0</item>
+         <item>1</item>
+         <item>3</item>
+ </integer-array>
+ <integer-array name="config_displayCompositionColorModes">
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+     </integer-array>
+     <integer-array name="config_displayCompositionColorSpaces">
+         <item>0</item>
+         <item>0</item>
+         <item>0</item>
+         <item>9</item>
+     </integer-array>
+
+
+
+
     
 </resources>
 
